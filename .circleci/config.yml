@@ -49,14 +49,14 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      - run: npm run news
+      - run: npm run newstime
 
 workflows:
    version: 2
    test:
     jobs:
       - test
-   news:
+   newstime:
      triggers:
        - schedule:
            cron: "* * * * *"
