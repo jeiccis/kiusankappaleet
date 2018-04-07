@@ -59,7 +59,7 @@ workflows:
    newstime:
      triggers:
        - schedule:
-           cron: "* * * * *"
+           cron: "0,30 * * * *"
            filters:
              branches:
                only:
