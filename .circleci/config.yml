@@ -56,7 +56,7 @@ workflows:
    test:
     jobs:
       - test
-   newstime:
+   news:
      triggers:
        - schedule:
            cron: "* * * * *"
