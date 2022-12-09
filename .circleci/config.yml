@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/node:9.9.0
+      - image: cimg/node:latest
 
     working_directory: ~/repo
 
@@ -28,7 +28,7 @@ jobs:
 
   news:
     docker:
-      - image: circleci/node:9.9.0
+      - image: cimg/node:latest
 
     working_directory: ~/repo
 
